@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bunch: Job Search App</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+					
+        <header class=''>
+	        <nav>
+				<ul class='nav-bar'>
+					<li class='active'>Home</li>
+					<li class='non-active'><a href="savedJobs.html">Saved Jobs</a></li>
+				</ul>
+			</nav>
+			<h1>Welcome to Bunch!</h1>
+		    <p>The one stop shop to find, apply, track, and <em>bunch</em> your job applications</p>
+		</header>
+
+
+		<main role="main">
+			
+			<form class="js-job-form" action="">
+				<fieldset>
+					<!-- Job Search Input -->
+					<section>
+						<label class='input-text' for="search">Job Search:</label>
+						<input id="search"  class="js-job-entry" type="text" placeholder="ex. Junior Web Developer" required>
+
+						<label class='input-text' for="location">Location:</label>
+						<input class ='js-location' id="location" type="text" placeholder="ex. New York" required>
+						
+						
+					</section>
+
+					<!-- Job Site Checkboxes -->
+					<section>
+						<header class='input-radio-header'>
+							<legend>Choose 1 of the 4 job sites below to find your job!</legend>
+						</header>
+						<section class='input-radio'>
+			                <label>Indeed
+							 <input type="radio" name='job-site' value="Indeed">
+						    </label>
+							<label>ZipRecruiter
+							   <input type="radio"  name='job-site' value="ZipRecruiter">
+							</label>
+							<label>GitHub
+							   <input type="radio"  name='job-site' value="GitHub">
+							</label>
+							<label>Muse
+							   <input type="radio"  name='job-site' value="Muse">
+						    </label>
+					    </section>
+					    <button type="submit">Submit</button>
+					</section>
+				</fieldset>
+			</form>
+
+
+
+			<!-- Job Search Results -->
+			<section class="js-results results">
+				<h2>Results:</h2>
+				<ul class='results-list'>
+					
+				</ul>
+				
+			</section>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+	</body>
+</html>

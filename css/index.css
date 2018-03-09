@@ -1,0 +1,257 @@
+/***************************************
+         === General ===
+****************************************/
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+		letter-spacing: 1px
+	}
+
+	body {
+		margin: 0;
+		font-family: 'Roboto', sans-serif;
+		background-color: #039be5 ;
+		color: #e1f5fe;
+	}
+
+	main {
+		padding-left: 20px;
+		padding-right: 20px;
+		max-width: 758px;
+		margin: 0 auto;
+	}
+
+/******************************************
+          === 0 - 599px ===
+*******************************************/
+    /*** NAV BAR ***/
+   	.nav-bar {
+   	  margin: 0;
+   	  padding: 0;
+	  font-size: 3.5rem;
+	  display: flex; 
+	  justify-content: space-around;
+	  align-items: center;
+	  list-style: none;
+	}
+
+	.nav-bar > li {
+		flex-grow: 1;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 100%;
+		width: 100%;
+	}
+
+   nav {
+   	 height: 100px;
+     width: 100%;
+   }
+
+	.active {
+	  text-decoration: underline;
+	  background-color: #1565c0
+	}
+
+	a {
+		text-decoration: none;
+		color:#e1f5fe;
+	}
+
+
+	/*** HEADER ***/
+	header {
+		font-size: 3rem;
+		text-align: center;
+		max-width: 758px;
+		margin: 0 auto;
+	}
+
+	p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	/*** FORM TEXT INPUT***/
+	fieldset {
+		border: 0;
+	}
+
+    label {
+       margin-left: 20px;
+       margin-right: 20px;
+       font-size: 2.5rem;
+    }
+
+    .input-text {
+    	display: block;
+    }
+
+	input[type='text'] {
+		height: 65px;
+		font-size: 2rem;
+	}
+
+	#search {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	   
+	#location {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	button[type='submit'] {
+		display: block;
+		margin: 40px auto;
+		height: 5rem;
+		width: 100%;
+		border-radius: 12px;
+		background-color: #0d47a1;
+		border-left: 1px solid #1976d2 ;
+		border-top: 1px solid #1976d2;
+		border-right: 3px solid #1976d2 ;
+		border-bottom: 3px solid #1976d2;
+		color: #e1f5fe;
+		font-size: 2.5rem;
+
+	}
+
+	button[type='submit']:hover {
+		transition: .5s;
+       background-color: #e1f5fe;
+       color:  #0d47a1;
+ 	   border-left: 1px solid  #0d47a1;
+	   border-top: 1px solid #0d47a1;
+	   border-right: 3px solid  #0d47a1;
+	   border-bottom: 3px solid #0d47a1;
+	}
+
+
+	/*** FORM RADIO INPUT***/
+    .input-radio-header {
+    	margin-top: 30px;
+    	margin-bottom: 30px;
+        display: flex;
+		align-items: center;
+    }
+
+	.input-radio {
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.input-radio label {
+		font-size: 1.5rem;
+	}
+
+	input[type='radio'] {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	/*** API HTML RESULTS ***/
+
+	.results {
+		margin: 0 auto;
+		padding-top: 5px;
+		padding-bottom: 20px;
+		background-color: #0d47a1;
+	}
+
+	h2 {
+		margin-left: 15px;
+	}
+
+	.results-list {
+        margin: 0 auto;
+		text-align: center;
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.results-list > li {
+		display: inline-block;
+		text-align: center
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 35px;
+		padding: 0 10px 0 10px;
+
+	}
+
+	.results-list > li:hover {
+		transition: .5s;
+		background-color: rgba(255, 255, 255, .5);
+	}
+
+	.company_logo {
+		height: 50px;
+		width: 50px;
+	}
+
+	.title,
+	.company,
+	.location,
+	.type {
+		font-size: 16px;
+		color: whitesmoke;
+		letter-spacing: 1px;
+	}
+
+	.btn-group {
+		text-align: center;
+	}
+
+	.apply,
+	.save {
+		margin-bottom: 10px;
+		background-color: #e1f5fe;
+        color: #0d47a1;
+		height: 20px;
+		width: 75px;
+		border-radius: 4px;
+		font-size: 12px;
+		letter-spacing: 2px;
+		font-weight: bold;
+		border-bottom: 3px solid lightblue;
+		border-right: 3px solid lightblue;
+		margin-right: 15px;
+	}
+
+	.apply:hover,
+	.save:hover {
+		transition: .5s;
+        background-color: #0d47a1;
+		border-left: 1px solid #1976d2 ;
+		border-top: 1px solid #1976d2;
+		border-right: 3px solid #1976d2 ;
+		border-bottom: 3px solid #1976d2;
+		color: #e1f5fe;
+	}
+
+
+/******************************************
+          === 599px+ ===
+*******************************************/
+@media only screen and (min-width: 600px) {
+
+	html {
+		font-size: 10px;
+	}
+
+}
+
+
+
+
