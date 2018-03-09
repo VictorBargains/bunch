@@ -61,16 +61,20 @@ function handleGithubApiResults(response) {
 function githubResultHtml(result) {
 	// 
 	return `<li>
-				<img class="company_logo" src="${result.company_logo}">
-				<span class="title">${result.title} |</span>
-				<span class="company">${result.company} |</span>
-				<span class="location">${result.location} |</span>
-				<span class="type">${result.type}</span>
-				<div class='btn-group'>
+<div class="company_logo">
+    <img  src="${result.company_logo}">
+                </div>
+                <div class="job-info">
+                    <span class="title">${result.title} |</span>
+                    <span class="company">${result.company} |</span>
+                    <span class="location">${result.location} |</span>
+                    <span class="type">${result.type}</span>
+                </div>
+<div class='btn-group'>
 				  <button class="apply">Apply</button>
 				  <button class="save">Save</button>
 				</div>
-			</li>`;
+</li>`;
 }
 
 function renderApiResults() {
